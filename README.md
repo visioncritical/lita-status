@@ -1,6 +1,6 @@
 # lita-status
 
-[![Build Status](https://travis-ci.org/Ginja/lita-status.png?branch=master)](https://travis-ci.org/Ginja/lita-status)
+[![Build Status](https://travis-ci.org/visioncritical/lita-status.png?branch=master)](https://travis-ci.org/visioncritical/lita-status)
 
 ## Installation
 
