@@ -1,0 +1,41 @@
+en:
+  lita:
+    handlers:
+      status:
+        error:
+          password_nil: "Failed to %{action} status. There's no password set for %{name}."
+          password_mismatch: "Failed to %{action} status. Password did not match stored password for %{name}."
+          no_user: "Could not find a user with the name %{name}."
+          no_status: "%{name} has no status."
+        help:
+          set:
+            syntax: status set STATUS_MESSAGE
+            desc: Sets your status
+          on_behalf_set:
+            syntax: status on behalf set USER PASSWORD STATUS_MESSAGE
+            desc: Allows a bot to set your status
+          get:
+            syntax: status get [USER]
+            desc: Get a user's status or your own if a user is not specified
+          get_all:
+            syntax: statuses
+            desc: Returns all statuses
+          remove:
+            syntax: status remove
+            desc: Removes your status
+          on_behalf_remove:
+            syntax: status remove USER PASSWORD
+            desc: Allows a bot to remove your status
+          password_set:
+            syntax: status password set PASSWORD
+            desc: "Sets a password (WARNING: stored in plain text inside Redis)"
+          password_remove:
+            syntax: status password remove
+            desc: Removes your password
+        set:
+          new: "%{name} has a new status."
+        get: "%{name}: %{status}"
+        remove: "Status removed for %{name}."
+        password:
+          set: "Password successfully set for %{name}."
+          remove: "Password successfully removed for %{name}."

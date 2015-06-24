@@ -1,0 +1,14 @@
+LineLength:
+  Max: 200
+
+FileName:
+  Enabled: false
+
+Documentation:
+  Enabled: false
+
+AbcSize:
+  Max: 25
+
+ClassLength:
+  Max: 110
