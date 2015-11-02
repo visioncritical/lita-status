@@ -1,6 +1,6 @@
 Gem::Specification.new do |spec|
   spec.name          = 'lita-status'
-  spec.version       = '0.0.2'
+  spec.version       = '0.1.0'
   spec.authors       = ['Riley Shott']
   spec.email         = ['riley.shott@visioncritical.com']
   spec.description   = 'Allows you to store statuses with Lita'
