@@ -98,8 +98,11 @@ module Lita
         ids.each do |id|
           lita_user = find_user id.gsub('status_', ''), :find_by_id
           status = fetch_status lita_user
-          return response.reply t('error.no_status', name: lita_user.name) if status.nil?
-          response.reply t('get', name: lita_user.name, status: status)
+          if status.nil?
+            response.reply t('error.no_status', name: lita_user.name) 
+          else
+            response.reply t('get', name: lita_user.name, status: status)
+          end
         end
       end
 

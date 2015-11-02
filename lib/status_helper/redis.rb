@@ -1,7 +1,7 @@
 module StatusHelper
   module Redis
     def store_status(user, message)
-      redis.hset format_status(user), 'message', message
+      redis.hset format_status(user), 'message', "#{message} -- #{Time.new}"
     end
 
     def fetch_status(user)
